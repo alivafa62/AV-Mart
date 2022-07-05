@@ -365,7 +365,7 @@
 																th:src="*{'data:image/jpeg;base64,'+{product.image}}"
 																height="250px" class="card-img-top" alt="...">
 															<div class="card-body">
-																<form action="/addToCart" method="POSt">
+																<form th:action="@{/addToCart}" method="POSt">
 																	<input type="hidden" name="id" th:value="${product.id}" />
 																	<input type="number" min="1" value="1" name="quantity"
 																		class="form-control" placeholder="quantity" />

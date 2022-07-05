@@ -119,7 +119,7 @@
 																</div>
 															</td>
 															<td class="text-center">
-																<form action="/updateShoppingCart" method="post">
+																<form th:action="@{/updateShoppingCart}" method="post">
 																	<input type="hidden" th:value="${cartItem.id}"
 																		name="item_id" />
 																	<div class="input-group">

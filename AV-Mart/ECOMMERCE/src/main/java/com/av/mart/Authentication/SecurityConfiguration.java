@@ -1,7 +1,6 @@
 package com.av.mart.Authentication;
 
 
-
 import java.util.Collection;
 
 import javax.management.relation.Role;
@@ -30,9 +29,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
    @Override
    protected void configure(HttpSecurity http) throws Exception {
-       http
-               .authorizeRequests()
-                   .antMatchers(
+       http.authorizeRequests().antMatchers(
                            "/registration**",
                            "/js/**",
                            "/css/**",
@@ -63,7 +60,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
    	
 		System.out.println("USER ROLE="+existing.getRoles());
    	
-       // IN DB: update role set name = "ROLE_SUPER" where id = 4;
+       // IN DB: update role set name = "ROLE_ADMIN" where id = 4;
 		Collection<com.av.mart.model.Role> roles = existing.getRoles();
 		String userRole = roles.toString();
 		System.out.println("COLLECTION USER ROLE="+userRole);

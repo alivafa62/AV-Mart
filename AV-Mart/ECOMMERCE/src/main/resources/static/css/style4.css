@@ -5,7 +5,7 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;
-    background: #eee;
+    background: #beb6b6;
 }
 
 p {
@@ -25,7 +25,7 @@ a:focus {
 }
 
 .navbar {
-    padding: 15px 10px;
+    
     background: #fff;
     border: none;
     border-radius: 0;
@@ -40,7 +40,7 @@ a:focus {
 	border-color:  #fff;
 }
 .navbar btn:hover{
-	background: #f8f9fa;
+	background: rgb(128, 255, 128);
 }
 
 .navbar-btn {
@@ -73,7 +73,7 @@ span {
 #sidebar {
     min-width: 200px;
     max-width: 200px;
-    background: #e7a035;
+    background: #44b92e;
     color: #fff;
     transition: all 0.3s;
 }
@@ -125,7 +125,7 @@ span {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #e7a035;
+    background: #000000;
 }
 
 #sidebar .sidebar-header strong {
@@ -145,8 +145,8 @@ span {
 }
 
 #sidebar ul li a:hover {
-    color: #e7a035;
-    background: #fff;
+    color: #fff;
+    background: #44b92e;
 }
 
 #sidebar ul li a i {
@@ -156,7 +156,7 @@ span {
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #e7a035;
+    background: #44b92e;
 }
 
 a[data-toggle="collapse"] {
@@ -174,7 +174,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #3c5c1e;
 }
 
 ul.CTAs {
@@ -286,7 +286,7 @@ a.article:hover {
 }
 
 .label{
-	background-color: #FFC107 !important;
+	background-color: #037a97 !important;
     color: #fff;
     border-radius: 35px;
     font-size: 10px;

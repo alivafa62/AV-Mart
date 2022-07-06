@@ -43,14 +43,14 @@ public class Product {
 	
 	@OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
 	@JoinColumn(name="product_id")
-	private Set<Carousel> carousel;
-	
-	public Set<Carousel> getCarousel() {
-		return carousel;
-	}
-	public void setCarousel(Set<Carousel> carousel) {
-		this.carousel = carousel;
-	}
+//	private Set<Carousel> carousel;
+//	
+//	public Set<Carousel> getCarousel() {
+//		return carousel;
+//	}
+//	public void setCarousel(Set<Carousel> carousel) {
+//		this.carousel = carousel;
+//	}
 	public Long getId() {
 		return id;
 	}

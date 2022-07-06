@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.av.mart.model.Carousel;
+//import com.av.mart.model.Carousel;
 import com.av.mart.model.Category;
 import com.av.mart.model.Coupon;
 import com.av.mart.model.Product;
@@ -110,19 +110,19 @@ public class ProductService {
 	public void addImageToProduct(MultipartFile file, Long id) {
 		
        Product p = productRepo.findById(id).get();
-       Carousel carousel = new Carousel();
+//       Carousel carousel = new Carousel();
        String fileName = StringUtils.cleanPath(file.getOriginalFilename());
 		if(fileName.contains(".."))
 		{
 			System.out.println("not a valid file");
 		}
-		try {
-			carousel.setImage(resizeImageForUse(Base64.getEncoder().encodeToString(file.getBytes()),400,400));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-         p.getCarousel().add(carousel);
-         productRepo.save(p);
+//		try {
+//			carousel.setImage(resizeImageForUse(Base64.getEncoder().encodeToString(file.getBytes()),400,400));
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+//         p.getCarousel().add(carousel);
+//         productRepo.save(p);
        
 	}
 	public void changeProductQuantity(Long id, int quantity) {
